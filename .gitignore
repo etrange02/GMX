@@ -1,0 +1,6 @@
+*.save
+*.old
+bin/
+obj/
+doc/html/
+CppCheckResults.xml
