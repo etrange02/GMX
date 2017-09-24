@@ -2,6 +2,7 @@
 <wxsmith>
 	<object class="wxPanel" name="AnalysisPanel">
 		<pos>123,75</pos>
+		<size>390,243</size>
 		<id_arg>0</id_arg>
 		<object class="wxBoxSizer" variable="BoxSizer2" member="no">
 			<orient>wxVERTICAL</orient>
@@ -9,15 +10,16 @@
 				<object class="wxBoxSizer" variable="BoxSizer3" member="no">
 					<object class="sizeritem">
 						<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
-							<label>Thésaurus sélectionné</label>
+							<label>Moteur sélectionné</label>
 							<size>118,13</size>
 						</object>
 						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 						<border>5</border>
 					</object>
 					<object class="sizeritem">
-						<object class="wxComboBox" name="ID_COMBOBOX1" variable="ComboBox1" member="yes">
+						<object class="wxComboBox" name="ID_COMBOBOX1" variable="m_engines" member="yes">
 							<style>wxCB_READONLY|wxCB_DROPDOWN</style>
+							<handler function="OnEnginesSelected" entry="EVT_COMBOBOX" />
 						</object>
 						<flag>wxALL</flag>
 						<border>5</border>
@@ -35,45 +37,71 @@
 							<object class="sizeritem">
 								<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="m_wordToAnalyse" member="yes">
 									<focused>1</focused>
+									<style>wxTE_PROCESS_ENTER|wxTE_MULTILINE</style>
+									<handler function="OnWordToAnalyseText" entry="EVT_TEXT" />
 								</object>
 								<flag>wxALL|wxEXPAND</flag>
 								<border>5</border>
 								<option>1</option>
 							</object>
 							<object class="sizeritem">
-								<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+								<object class="wxStaticText" name="ID_STATICTEXT2" variable="m_recognizedWord" member="yes">
+									<label></label>
+									<style>wxST_NO_AUTORESIZE|wxVSCROLL</style>
+								</object>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxButton" name="ID_BUTTON1" variable="m_addWord" member="yes">
 									<label>Ajouter au thésaurus</label>
+									<handler function="OnAddWordClick" entry="EVT_BUTTON" />
 								</object>
 								<flag>wxBOTTOM|wxLEFT|wxRIGHT|wxEXPAND</flag>
 								<border>5</border>
 							</object>
 						</object>
-						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<flag>wxALL|wxEXPAND</flag>
 						<option>1</option>
 					</object>
+					<object class="spacer">
+						<flag>wxALL|wxEXPAND</flag>
+						<size>2,150</size>
+					</object>
 					<object class="sizeritem">
-						<object class="wxBoxSizer" variable="m_guematrixNumberSizer" member="yes">
-							<orient>wxVERTICAL</orient>
+						<object class="wxFlexGridSizer" variable="m_numberSizer" member="yes">
+							<cols>2</cols>
+							<vgap>5</vgap>
+							<object class="sizeritem">
+								<object class="wxStaticText" name="ID_STATICTEXT3" variable="m_guematrixValueLabel" member="yes">
+									<label>Guématrie</label>
+								</object>
+								<flag>wxALL</flag>
+								<border>5</border>
+							</object>
+							<object class="sizeritem">
+								<object class="wxStaticText" name="ID_STATICTEXT4" variable="m_reductionValueLabel" member="yes">
+									<label>Réduction</label>
+								</object>
+								<flag>wxALL</flag>
+								<border>5</border>
+							</object>
 						</object>
-						<flag>wxLEFT|wxRIGHT|wxALIGN_TOP</flag>
+						<flag>wxLEFT|wxEXPAND|wxFIXED_MINSIZE</flag>
 						<border>5</border>
 					</object>
-					<object class="sizeritem">
-						<object class="wxBoxSizer" variable="m_reductionNumberSizer" member="yes">
-							<orient>wxVERTICAL</orient>
-						</object>
-						<flag>wxALL|wxALIGN_TOP</flag>
-					</object>
 				</object>
-				<flag>wxALL|wxEXPAND</flag>
+				<flag>wxALL|wxEXPAND|wxFIXED_MINSIZE</flag>
 				<border>5</border>
 			</object>
 			<object class="sizeritem">
 				<object class="wxStaticBoxSizer" variable="StaticBoxSizer2" member="no">
 					<label>Correspondances dans le thésaurus</label>
 					<object class="sizeritem">
-						<object class="wxListView" name="ID_LISTVIEW1" variable="ListView1" member="yes">
+						<object class="wxListView" name="ID_LISTVIEW1" variable="m_similarWords" member="yes">
 							<size>360,98</size>
+							<style>wxLC_REPORT</style>
 						</object>
 						<flag>wxALL|wxEXPAND</flag>
 						<border>5</border>

@@ -11,7 +11,7 @@
 #define GMXAPP_H
 
 #include <wx/app.h>
-#include "application/Mediator.h"
+#include "applocation/Mediator.h"
 
 class GMXApp : public wxApp
 {

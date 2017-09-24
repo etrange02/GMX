@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <wxsmith>
 	<object class="wxPanel" name="ThesaurusPanel">
-		<pos_arg>1</pos_arg>
-		<size_arg>1</size_arg>
+		<id_arg>0</id_arg>
+		<object class="wxBoxSizer" variable="m_boxSizer1" member="yes">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<object class="wxStaticBoxSizer" variable="m_staticBoxSizer4" member="yes">
+					<label>Nouveau moteur</label>
+					<object class="sizeritem">
+						<object class="wxTextCtrl" name="ID_ENGINE_NAME_TEXTCTRL" variable="m_thesaurusName" member="yes" />
+						<flag>wxTOP|wxBOTTOM|wxLEFT|wxEXPAND</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+					<object class="sizeritem">
+						<object class="wxButton" name="ID_CREATE_ENGINE_BUTTON" variable="m_createButton" member="yes">
+							<label>Créer</label>
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+					</object>
+				</object>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+			</object>
+			<object class="sizeritem">
+				<object class="wxBoxSizer" variable="m_boxSizer4" member="yes">
+					<object class="sizeritem">
+						<object class="wxListCtrl" name="ID_ENGINES_LISTCTRL" variable="m_engines" member="yes">
+							<style>wxLC_REPORT</style>
+						</object>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+				</object>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+		</object>
 	</object>
 </wxsmith>

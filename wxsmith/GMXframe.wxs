@@ -10,18 +10,14 @@
 			<object class="sizeritem">
 				<object class="wxNotebook" name="ID_NOTEBOOK1" variable="m_notebook" member="yes">
 					<size>398,282</size>
-					<handler function="OnNotebook1PageChanged" entry="EVT_NOTEBOOK_PAGE_CHANGED" />
+					<handler function="OnNotebookPageChanged" entry="EVT_NOTEBOOK_PAGE_CHANGED" />
 					<object class="notebookpage">
-						<object class="wxPanel" name="ID_PANEL_ANALYSE" subclass="AnalysisPanel" variable="m_analysisPanel" member="yes">
-							<pos>123,75</pos>
-							<size>-1,-1</size>
-						</object>
+						<object class="wxPanel" name="ID_PANEL_ANALYSE" subclass="AnalysisPanel" variable="m_analysisPanel" member="yes" />
 						<label>Analyse</label>
+						<selected>1</selected>
 					</object>
 					<object class="notebookpage">
-						<object class="wxPanel" name="ID_PANEL2" variable="m_thesaurusPanel" member="yes">
-							<pos>192,10</pos>
-						</object>
+						<object class="wxPanel" name="ID_ENGINE_PANEL" subclass="ThesaurusPanel" variable="m_thesaurusPanel" member="yes" />
 						<label>Gestion des thésaurus</label>
 					</object>
 				</object>

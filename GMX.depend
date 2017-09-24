@@ -1,11 +1,12 @@
 # depslib dependency file v1.0
-1469575258 source:c:\workspace\projects\gmx\gmxapp.cpp
+1482682107 source:c:\workspace\projects\gmx\gmxapp.cpp
 	"GMXApp.h"
 	"include/GUI/GMXMain.h"
 	<wx/image.h>
 
-1469379271 c:\workspace\projects\gmx\gmxapp.h
+1493682230 c:\workspace\projects\gmx\gmxapp.h
 	<wx/app.h>
+	"application/Mediator.h"
 
 1456695216 c:\workspace\libraries\wx310gl\include\wx\app.h
 	"wx/event.h"
@@ -75,7 +76,7 @@
 
 1456695216 c:\workspace\libraries\wx310gl\include\wx\compiler.h
 
-1463010876 c:\workspace\libraries\wx310gl\lib\gcc_lib\mswu\wx\setup.h
+1481675322 c:\workspace\libraries\wx310gl\lib\gcc_lib\mswu\wx\setup.h
 
 1456695216 c:\workspace\libraries\wx310gl\include\wx\msw\libraries.h
 
@@ -1585,43 +1586,755 @@
 1456695216 c:\workspace\libraries\wx310gl\include\wx\qt\stattext.h
 	<QtWidgets/QLabel>
 
-1469432039 source:c:\workspace\projects\gmx\src\gui\thesauruspanel.cpp
+1493505119 source:c:\workspace\projects\gmx\src\gui\thesauruspanel.cpp
 	"../../include/GUI/ThesaurusPanel.h"
+	<wx/button.h>
 	<wx/intl.h>
-	<wx/string.h>
-
-1469432039 c:\workspace\projects\gmx\include\gui\thesauruspanel.h
-	<wx/panel.h>
-
-1469575550 c:\workspace\projects\gmx\include\gui\gmxmain.h
-	<wx/notebook.h>
+	<wx/listctrl.h>
 	<wx/sizer.h>
+	<wx/string.h>
+	<wx/textctrl.h>
+
+1493505119 c:\workspace\projects\gmx\include\gui\thesauruspanel.h
+	<wx/panel.h>
+
+1493504991 c:\workspace\projects\gmx\include\gui\gmxmain.h
 	<wx/app.h>
-	<wx/menu.h>
-	<wx/toolbar.h>
-	<wx/panel.h>
-	<wx/snglinst.h>
-	<wx/utils.h>
 	<wx/frame.h>
-	"AnalysisPanel.h"
-
-1469571944 c:\workspace\projects\gmx\include\gui\analysispanel.h
+	<wx/menu.h>
+	<wx/notebook.h>
 	<wx/panel.h>
-
-1469575561 source:c:\workspace\projects\gmx\src\gui\analysispanel.cpp
+	<wx/sizer.h>
+	<wx/snglinst.h>
+	<wx/toolbar.h>
+	<wx/utils.h>
 	"AnalysisPanel.h"
+	"ThesaurusPanel.h"
+
+1506018347 c:\workspace\projects\gmx\include\gui\analysispanel.h
+	<wx/panel.h>
+	"word/WordManager.h"
+
+1506021522 source:c:\workspace\projects\gmx\src\gui\analysispanel.cpp
+	"AnalysisPanel.h"
+	"word/GuematricNumber.h"
+	<wx/button.h>
+	<wx/combobox.h>
+	<wx/intl.h>
 	<wx/listctrl.h>
 	<wx/sizer.h>
 	<wx/stattext.h>
-	<wx/textctrl.h>
-	<wx/intl.h>
-	<wx/button.h>
 	<wx/string.h>
-	<wx/combobox.h>
+	<wx/textctrl.h>
 
-1469575553 source:c:\workspace\projects\gmx\src\gui\gmxmain.cpp
+1504461231 source:c:\workspace\projects\gmx\src\gui\gmxmain.cpp
 	"GMXMain.h"
 	<wx/msgdlg.h>
 	<wx/intl.h>
 	<wx/string.h>
+
+1493667098 source:c:\workspace\projects\gmx\src\database\databasefactory.cpp
+	"DataBaseFactory.h"
+	"database/DataBaseOpeningRequest_01.h"
+	"tools/database/requests/DataBaseClosingRequest.h"
+
+1493667102 c:\workspace\projects\gmx\include\database\databasefactory.h
+	<wx/wx.h>
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\wx.h
+	"wx/defs.h"
+	"wx/object.h"
+	"wx/dynarray.h"
+	"wx/list.h"
+	"wx/hash.h"
+	"wx/string.h"
+	"wx/hashmap.h"
+	"wx/arrstr.h"
+	"wx/intl.h"
+	"wx/log.h"
+	"wx/event.h"
+	"wx/app.h"
+	"wx/utils.h"
+	"wx/stream.h"
+	"wx/memory.h"
+	"wx/math.h"
+	"wx/stopwatch.h"
+	"wx/timer.h"
+	"wx/module.h"
+	"wx/wxcrt.h"
+	"wx/wxcrtvararg.h"
+	"wx/window.h"
+	"wx/containr.h"
+	"wx/panel.h"
+	"wx/toplevel.h"
+	"wx/frame.h"
+	"wx/gdicmn.h"
+	"wx/gdiobj.h"
+	"wx/region.h"
+	"wx/bitmap.h"
+	"wx/image.h"
+	"wx/colour.h"
+	"wx/font.h"
+	"wx/dc.h"
+	"wx/dcclient.h"
+	"wx/dcmemory.h"
+	"wx/dcprint.h"
+	"wx/dcscreen.h"
+	"wx/button.h"
+	"wx/menuitem.h"
+	"wx/menu.h"
+	"wx/pen.h"
+	"wx/brush.h"
+	"wx/palette.h"
+	"wx/icon.h"
+	"wx/cursor.h"
+	"wx/dialog.h"
+	"wx/settings.h"
+	"wx/msgdlg.h"
+	"wx/dataobj.h"
+	"wx/control.h"
+	"wx/ctrlsub.h"
+	"wx/bmpbuttn.h"
+	"wx/checkbox.h"
+	"wx/checklst.h"
+	"wx/choice.h"
+	"wx/scrolbar.h"
+	"wx/stattext.h"
+	"wx/statbmp.h"
+	"wx/statbox.h"
+	"wx/listbox.h"
+	"wx/radiobox.h"
+	"wx/radiobut.h"
+	"wx/textctrl.h"
+	"wx/slider.h"
+	"wx/gauge.h"
+	"wx/scrolwin.h"
+	"wx/dirdlg.h"
+	"wx/toolbar.h"
+	"wx/combobox.h"
+	"wx/layout.h"
+	"wx/sizer.h"
+	"wx/statusbr.h"
+	"wx/choicdlg.h"
+	"wx/textdlg.h"
+	"wx/filedlg.h"
+	"wx/mdi.h"
+	"wx/validate.h"
+	"wx/valtext.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\hash.h
+	"wx/defs.h"
+	"wx/string.h"
+	"wx/object.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\module.h
+	"wx/object.h"
+	"wx/list.h"
+	"wx/arrstr.h"
+	"wx/dynarray.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\dcprint.h
+	"wx/defs.h"
+	"wx/dc.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\dcscreen.h
+	"wx/defs.h"
+	"wx/dc.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\dataobj.h
+	"wx/defs.h"
+	"wx/string.h"
+	"wx/bitmap.h"
+	"wx/list.h"
+	"wx/arrstr.h"
+	"wx/msw/ole/dataform.h"
+	"wx/motif/dataform.h"
+	"wx/gtk/dataform.h"
+	"wx/gtk1/dataform.h"
+	"wx/x11/dataform.h"
+	"wx/osx/dataform.h"
+	"wx/qt/dataform.h"
+	"wx/msw/ole/dataobj.h"
+	"wx/motif/dataobj.h"
+	"wx/x11/dataobj.h"
+	"wx/gtk/dataobj.h"
+	"wx/gtk1/dataobj.h"
+	"wx/osx/dataobj.h"
+	"wx/qt/dataobj.h"
+	"wx/msw/ole/dataobj2.h"
+	"wx/gtk/dataobj2.h"
+	"wx/gtk1/dataobj2.h"
+	"wx/x11/dataobj2.h"
+	"wx/motif/dataobj2.h"
+	"wx/osx/dataobj2.h"
+	"wx/qt/dataobj2.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\msw\ole\dataform.h
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\qt\dataform.h
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\msw\ole\dataobj.h
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\qt\dataobj.h
+	<QMimeData>
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\msw\ole\dataobj2.h
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\qt\dataobj2.h
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\bmpbuttn.h
+	"wx/defs.h"
+	"wx/button.h"
+	"wx/univ/bmpbuttn.h"
+	"wx/msw/bmpbuttn.h"
+	"wx/motif/bmpbuttn.h"
+	"wx/gtk/bmpbuttn.h"
+	"wx/gtk1/bmpbuttn.h"
+	"wx/osx/bmpbuttn.h"
+	"wx/qt/bmpbuttn.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\univ\bmpbuttn.h
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\msw\bmpbuttn.h
+	"wx/button.h"
+	"wx/bitmap.h"
+	"wx/brush.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\qt\bmpbuttn.h
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\checkbox.h
+	"wx/defs.h"
+	"wx/control.h"
+	"wx/univ/checkbox.h"
+	"wx/msw/checkbox.h"
+	"wx/motif/checkbox.h"
+	"wx/gtk/checkbox.h"
+	"wx/gtk1/checkbox.h"
+	"wx/osx/checkbox.h"
+	"wx/qt/checkbox.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\univ\checkbox.h
+	"wx/button.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\msw\checkbox.h
+	"wx/msw/ownerdrawnbutton.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\msw\ownerdrawnbutton.h
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\qt\checkbox.h
+	<QtWidgets/QCheckBox>
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\checklst.h
+	"wx/defs.h"
+	"wx/listbox.h"
+	"wx/univ/checklst.h"
+	"wx/msw/checklst.h"
+	"wx/motif/checklst.h"
+	"wx/gtk/checklst.h"
+	"wx/gtk1/checklst.h"
+	"wx/osx/checklst.h"
+	"wx/qt/checklst.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\listbox.h
+	"wx/defs.h"
+	"wx/ctrlsub.h"
+	"wx/univ/listbox.h"
+	"wx/msw/listbox.h"
+	"wx/motif/listbox.h"
+	"wx/gtk/listbox.h"
+	"wx/gtk1/listbox.h"
+	"wx/osx/listbox.h"
+	"wx/qt/listbox.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\univ\listbox.h
+	"wx/scrolwin.h"
+	"wx/dynarray.h"
+	"wx/arrstr.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\msw\listbox.h
+	"wx/dynarray.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\qt\listbox.h
+	<QtWidgets/QListWidget>
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\univ\checklst.h
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\msw\checklst.h
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\qt\checklst.h
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\scrolbar.h
+	"wx/defs.h"
+	"wx/control.h"
+	"wx/univ/scrolbar.h"
+	"wx/msw/scrolbar.h"
+	"wx/motif/scrolbar.h"
+	"wx/gtk/scrolbar.h"
+	"wx/gtk1/scrolbar.h"
+	"wx/osx/scrolbar.h"
+	"wx/qt/scrolbar.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\univ\scrolbar.h
+	"wx/univ/scrarrow.h"
+	"wx/renderer.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\univ\scrarrow.h
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\msw\scrolbar.h
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\qt\scrolbar.h
+	"wx/scrolbar.h"
+	<QtWidgets/QScrollBar>
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\statbmp.h
+	"wx/defs.h"
+	"wx/control.h"
+	"wx/bitmap.h"
+	"wx/icon.h"
+	"wx/univ/statbmp.h"
+	"wx/msw/statbmp.h"
+	"wx/motif/statbmp.h"
+	"wx/gtk/statbmp.h"
+	"wx/gtk1/statbmp.h"
+	"wx/osx/statbmp.h"
+	"wx/qt/statbmp.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\univ\statbmp.h
+	"wx/bitmap.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\msw\statbmp.h
+	"wx/control.h"
+	"wx/icon.h"
+	"wx/bitmap.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\qt\statbmp.h
+	<QtWidgets/QLabel>
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\statbox.h
+	"wx/defs.h"
+	"wx/control.h"
+	"wx/containr.h"
+	"wx/univ/statbox.h"
+	"wx/msw/statbox.h"
+	"wx/motif/statbox.h"
+	"wx/gtk/statbox.h"
+	"wx/gtk1/statbox.h"
+	"wx/osx/statbox.h"
+	"wx/qt/statbox.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\univ\statbox.h
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\msw\statbox.h
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\qt\statbox.h
+	<QtWidgets/QGroupBox>
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\radiobox.h
+	"wx/defs.h"
+	"wx/ctrlsub.h"
+	"wx/dynarray.h"
+	"wx/univ/radiobox.h"
+	"wx/msw/radiobox.h"
+	"wx/motif/radiobox.h"
+	"wx/gtk/radiobox.h"
+	"wx/gtk1/radiobox.h"
+	"wx/osx/radiobox.h"
+	"wx/qt/radiobox.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\univ\radiobox.h
+	"wx/statbox.h"
+	"wx/dynarray.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\msw\radiobox.h
+	"wx/statbox.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\qt\radiobox.h
+	<QtWidgets/QGroupBox>
+	<QtWidgets/QButtonGroup>
+	<QtWidgets/QVBoxLayout>
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\radiobut.h
+	"wx/defs.h"
+	"wx/control.h"
+	"wx/univ/radiobut.h"
+	"wx/msw/radiobut.h"
+	"wx/motif/radiobut.h"
+	"wx/gtk/radiobut.h"
+	"wx/gtk1/radiobut.h"
+	"wx/osx/radiobut.h"
+	"wx/qt/radiobut.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\univ\radiobut.h
+	"wx/checkbox.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\msw\radiobut.h
+	"wx/msw/ownerdrawnbutton.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\qt\radiobut.h
+	<QtWidgets/QRadioButton>
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\slider.h
+	"wx/defs.h"
+	"wx/control.h"
+	"wx/univ/slider.h"
+	"wx/msw/slider.h"
+	"wx/motif/slider.h"
+	"wx/gtk/slider.h"
+	"wx/gtk1/slider.h"
+	"wx/osx/slider.h"
+	"wx/qt/slider.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\univ\slider.h
+	"wx/univ/scrthumb.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\univ\scrthumb.h
+	"wx/timer.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\msw\slider.h
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\qt\slider.h
+	<QtWidgets/QSlider>
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\gauge.h
+	"wx/defs.h"
+	"wx/control.h"
+	"wx/univ/gauge.h"
+	"wx/msw/gauge.h"
+	"wx/motif/gauge.h"
+	"wx/gtk/gauge.h"
+	"wx/gtk1/gauge.h"
+	"wx/osx/gauge.h"
+	"wx/qt/gauge.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\univ\gauge.h
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\msw\gauge.h
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\qt\gauge.h
+	<QtWidgets/QProgressBar>
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\dirdlg.h
+	"wx/defs.h"
+	"wx/dialog.h"
+	"wx/generic/dirdlgg.h"
+	"wx/generic/dirdlgg.h"
+	"wx/msw/dirdlg.h"
+	"wx/gtk/dirdlg.h"
+	"wx/generic/dirdlgg.h"
+	"wx/osx/dirdlg.h"
+	"wx/generic/dirdlgg.h"
+	"wx/qt/dirdlg.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\generic\dirdlgg.h
+	"wx/dialog.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\msw\dirdlg.h
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\qt\dirdlg.h
+	<QtWidgets/QFileDialog>
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\layout.h
+	"wx/object.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\choicdlg.h
+	"wx/defs.h"
+	"wx/generic/choicdgg.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\generic\choicdgg.h
+	"wx/dynarray.h"
+	"wx/dialog.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\textdlg.h
+	"wx/generic/textdlgg.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\generic\textdlgg.h
+	"wx/defs.h"
+	"wx/dialog.h"
+	"wx/valtext.h"
+	"wx/textctrl.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\valtext.h
+	"wx/defs.h"
+	"wx/validate.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\filedlg.h
+	"wx/defs.h"
+	"wx/dialog.h"
+	"wx/arrstr.h"
+	"wx/generic/filedlgg.h"
+	"wx/msw/filedlg.h"
+	"wx/motif/filedlg.h"
+	"wx/gtk/filedlg.h"
+	"wx/gtk1/filedlg.h"
+	"wx/osx/filedlg.h"
+	"wx/qt/filedlg.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\generic\filedlgg.h
+	"wx/listctrl.h"
+	"wx/datetime.h"
+	"wx/filefn.h"
+	"wx/artprov.h"
+	"wx/filedlg.h"
+	"wx/generic/filectrlg.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\artprov.h
+	"wx/string.h"
+	"wx/bitmap.h"
+	"wx/icon.h"
+	"wx/iconbndl.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\generic\filectrlg.h
+	"wx/containr.h"
+	"wx/listctrl.h"
+	"wx/filectrl.h"
+	"wx/filename.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\filectrl.h
+	"wx/defs.h"
+	"wx/string.h"
+	"wx/event.h"
+	"wx/gtk/filectrl.h"
+	"wx/generic/filectrlg.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\filename.h
+	"wx/arrstr.h"
+	"wx/filefn.h"
+	"wx/datetime.h"
+	"wx/intl.h"
+	"wx/longlong.h"
+	"wx/file.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\file.h
+	"wx/defs.h"
+	"wx/string.h"
+	"wx/filefn.h"
+	"wx/convauto.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\convauto.h
+	"wx/strconv.h"
+	"wx/fontenc.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\msw\filedlg.h
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\qt\filedlg.h
+	<QtWidgets/QFileDialog>
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\mdi.h
+	"wx/defs.h"
+	"wx/frame.h"
+	"wx/menu.h"
+	"wx/generic/mdig.h"
+	"wx/msw/mdi.h"
+	"wx/gtk/mdi.h"
+	"wx/gtk1/mdi.h"
+	"wx/osx/mdi.h"
+	"wx/qt/mdi.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\generic\mdig.h
+	"wx/panel.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\msw\mdi.h
+	"wx/frame.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\qt\mdi.h
+
+1493667251 c:\workspace\projects\gmx\\include\database\databaseopeningrequest_01.h
+	"tools/database/requests/DataBaseOpeningRequest.h"
+
+1481485519 c:\workspace\projects\wxtools\include\tools\database\requests\databaseopeningrequest.h
+	"tools/database/DataBaseRequest.h"
+
+1457645788 c:\workspace\projects\wxtools\include\tools\database\databaserequest.h
+	"tools/thread/Runnable.h"
+	<wx/wx.h>
+
+1456957693 c:\workspace\projects\wxtools\include\tools\thread\runnable.h
+	"IRunnable.h"
+
+1456957693 c:\workspace\projects\wxtools\include\tools\thread\irunnable.h
+
+1481485539 c:\workspace\projects\wxtools\include\tools\database\requests\databaseclosingrequest.h
+	"tools/database/DataBaseRequest.h"
+
+1493667251 c:\workspace\projects\gmx\include\database\databaseopeningrequest_01.h
+	"tools/database/requests/DataBaseOpeningRequest.h"
+
+1493682532 source:c:\workspace\projects\gmx\src\database\databaseopeningrequest_01.cpp
+	"DataBaseOpeningRequest_01.h"
+	<wx/wxsqlite3.h>
+	"DataBase_MetaData.h"
+	"tools/database/DataBaseMetaData.h"
+
+1460239922 c:\workspace\libraries\wxsqlite3\wxsqlite3-3.3.1\wxsqlite3-3.3.1\include\wx\wxsqlite3.h
+	<wx/arrstr.h>
+	<wx/datetime.h>
+	<wx/buffer.h>
+	<wx/hashmap.h>
+	<wx/regex.h>
+	<wx/string.h>
+	"wx/wxsqlite3def.h"
+
+1456695216 c:\workspace\libraries\wx310gl\include\wx\regex.h
+	"wx/defs.h"
+	"wx/string.h"
+
+1460239724 c:\workspace\libraries\wxsqlite3\wxsqlite3-3.3.1\wxsqlite3-3.3.1\include\wx\wxsqlite3def.h
+
+1493682515 c:\workspace\projects\gmx\include\database\database_metadata.h
+
+1481154009 c:\workspace\projects\wxtools\include\tools\database\databasemetadata.h
+
+1505078979 source:c:\workspace\projects\gmx\src\model\alphabeat.cpp
+	"Alphabeat.h"
+
+1505076854 c:\workspace\projects\gmx\include\model\alphabeat.h
+	<wx/wx.h>
+	<vector>
+	"model/Thesaurus.h"
+	"model/ValuedSet.h"
+
+1505069611 source:c:\workspace\projects\gmx\src\model\thesaurus.cpp
+	"Thesaurus.h"
+
+1505076659 c:\workspace\projects\gmx\include\model\thesaurus.h
+	<wx/wx.h>
+	<vector>
+
+1493682283 c:\workspace\projects\gmx\include\application\mediator.h
+	"tools/database/DataBaseManager.h"
+
+1459450502 c:\workspace\projects\wxtools\include\tools\database\databasemanager.h
+	<map>
+	"tools/thread/manager/SingleThreadManager.h"
+
+1457344315 c:\workspace\projects\wxtools\include\tools\thread\manager\singlethreadmanager.h
+	"AbstractThreadManager.h"
+
+1481397452 c:\workspace\projects\wxtools\include\tools\thread\manager\abstractthreadmanager.h
+	<vector>
+	<tools/thread/IThreadManager.h>
+	<tools/stl/ThreadSafePriorityQueue.h>
+	<tools/stl/ThreadSafeQueue.h>
+	<tools/thread/RunnableComparator.h>
+
+1456957693 c:\workspace\projects\wxtools\include\tools\thread\ithreadmanager.h
+	"ThreadProcess.h"
+
+1456443437 c:\workspace\projects\wxtools\include\tools\thread\threadprocess.h
+	<wx/wx.h>
+	<wx/thread.h>
+	"IThreadManager.h"
+	"Runnable.h"
+
+1481239929 c:\workspace\projects\wxtools\include\tools\stl\threadsafepriorityqueue.h
+	<queue>
+	<wx/wx.h>
+	<wx/thread.h>
+
+1456441692 c:\workspace\projects\wxtools\include\tools\stl\threadsafequeue.h
+	<queue>
+	<wx/wx.h>
+	<wx/thread.h>
+
+1456957669 c:\workspace\projects\wxtools\include\tools\thread\runnablecomparator.h
+
+1493682256 source:c:\workspace\projects\gmx\src\application\mediator.cpp
+	"Mediator.h"
+	"tools/database/DataBaseManager.h"
+
+1505069828 source:c:\workspace\projects\gmx\src\model\valuedletter.cpp
+	"ValuedLetter.h"
+
+1505069719 c:\workspace\projects\gmx\include\model\valuedletter.h
+	<wx/wx.h>
+
+1505654504 source:c:\workspace\projects\gmx\src\model\valuedset.cpp
+	"ValuedSet.h"
+
+1505654509 c:\workspace\projects\gmx\include\model\valuedset.h
+	<wx/wx.h>
+	<vector>
+	"model/ValuedLetter.h"
+
+1481675322 c:\workspace\libraries\wx310gl\include\wx\setup.h
+
+1505077271 source:c:\workspace\projects\gmx\src\database\alphabeat\alphabeatcreatingresponse.cpp
+	"AlphabeatCreatingResponse.h"
+
+1505076793 c:\workspace\projects\gmx\include\database\alphabeat\alphabeatcreatingresponse.h
+	"tools/database/DataBaseResponse.h"
+	"model/Alphabeat.h"
+
+1457720399 c:\workspace\projects\wxtools\include\tools\database\databaseresponse.h
+	<wx/wx.h>
+
+1505078911 source:c:\workspace\projects\gmx\src\database\alphabeat\alphabeatreadingresponse.cpp
+	"AlphabeatReadingResponse.h"
+
+1505078917 c:\workspace\projects\gmx\include\database\alphabeat\alphabeatreadingresponse.h
+	<vector>
+	"tools/database/DataBaseResponse.h"
+	"model/Alphabeat.h"
+
+1505078387 source:c:\workspace\projects\gmx\src\database\alphabeat\alphabeatreadingrequest.cpp
+	"AlphabeatReadingRequest.h"
+	<wx/wxsqlite3.h>
+	<tools/database/DataBaseManager.h>
+	"database/DataBase_MetaData.h"
+	"model/Alphabeat.h"
+	"database/alphabeat/AlphabeatReadingResponse.h"
+
+1505077077 c:\workspace\projects\gmx\include\database\alphabeat\alphabeatreadingrequest.h
+	"tools/database/DataBaseRequest.h"
+
+1505583380 source:c:\workspace\projects\gmx\src\database\alphabeatcreatingrequest.cpp
+	"AlphabeatCreatingRequest.h"
+	"tools/database/DataBaseManager.h"
+	"tools/database/DataBaseResponse.h"
+	<algorithm>
+	<wx/wxsqlite3.h>
+	"database/DataBase_MetaData.h"
+	"database/alphabeat/AlphabeatCreatingResponse.h"
+	"model/Alphabeat.h"
+	"compatibility/cpp11.h"
+
+1505078071 c:\workspace\projects\gmx\include\database\alphabeatcreatingrequest.h
+	"tools/database/DataBaseRequest.h"
+
+1506190467 source:c:\workspace\projects\gmx\src\word\wordmanager.cpp
+	"WordManager.h"
+	<algorithm>
+	"word/WordAnalyzer.h"
+
+1506194963 c:\workspace\projects\gmx\include\word\wordmanager.h
+	<wx/wx.h>
+	<vector>
+	"model/ValuedSet.h"
+	"word/GuematricNumber.h"
+
+1505580148 c:\workspace\projects\gmx\include\compatibility\cpp11.h
+
+1505676909 source:c:\workspace\projects\gmx\src\word\letterfinder.cpp
+	"LetterFinder.h"
+
+1505654362 c:\workspace\projects\gmx\include\word\letterfinder.h
+	<wx/wx.h>
+	<vector>
+	"model/ValuedLetter.h"
+
+1505665306 source:c:\workspace\projects\gmx\src\word\wordanalyzer.cpp
+	"WordAnalyzer.h"
+	<algorithm>
+	<vector>
+	"model/ValuedLetter.h"
+	"word/LetterFinder.h"
+
+1505654955 c:\workspace\projects\gmx\include\word\wordanalyzer.h
+	<wx/wx.h>
+	"model/ValuedSet.h"
+
+1505861364 c:\workspace\projects\gmx\include\word\guematricnumber.h
+
+1506021784 source:c:\workspace\projects\gmx\src\word\guematricnumber.cpp
+	"GuematricNumber.h"
 

@@ -1,0 +1,31 @@
+#ifndef DATABASE_METADATA_H_INCLUDED
+#define DATABASE_METADATA_H_INCLUDED
+
+#define TABLE_ALPHABEAT "alphabeat"
+#define COLUMN_ALPHABEAT_ID "id"
+#define COLUMN_ALPHABEAT_LETTERS "letters"
+
+#define TABLE_THESAURUS "thesaurus"
+#define COLUMN_THESAURUS_ID "id"
+#define COLUMN_THESAURUS_ALPHABEAT_ID "alphabeat_id"
+#define COLUMN_THESAURUS_WORD "word"
+
+#define TABLE_VALUEDSET "valuedset"
+#define COLUMN_VALUEDSET_ID "id"
+#define COLUMN_VALUEDSET_ALPHABEAT_ID "alphabeat_id"
+#define COLUMN_VALUEDSET_NAME "name"
+
+#define TABLE_GUEMATRIX "guematrix"
+#define COLUMN_GUEMATRIX_ID "id"
+#define COLUMN_GUEMATRIX_VALUEDSET_ID "valuedset_id"
+#define COLUMN_GUEMATRIX_THESAURUS_ID "thesaurus_id"
+#define COLUMN_GUEMATRIX_VALUE "value"
+#define COLUMN_GUEMATRIX_OCCURENCE "occurence"
+
+#define TABLE_VALUEDLETTER "valuedletter"
+#define COLUMN_VALUEDLETTER_ID "id"
+#define COLUMN_VALUEDLETTER_VALUEDSET_ID "valuedset_id"
+#define COLUMN_VALUEDLETTER_LETTER "letter"
+#define COLUMN_VALUEDLETTER_VALUE "value"
+
+#endif // DATABASE_METADATA_H_INCLUDED
